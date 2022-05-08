@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Condensed:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_next.css">
+	<title>Website Styling Challenge</title>
+</head>
+<body>
+
+<div id="main">
+	<div class="content">
+		<div class="main-para">
+			<h1 class="subtitle">MENU</h1>
+			<p>This hotel Menu consists of: 
+				<ul>
+					<li>Fast food</li>			
+					<li>Veg</li>
+					<li>Non-Veg</li>
+					<li>Cold-Drinks</li>
+				</ul>	
+			</p>
+			<p>Currently present food items given below</p>
+		</div>
+
+		<div class="para-1">
+			<h2 class="subtitle">Fast food</h2>
+			<table>
+      <tr>
+        <td>Pizza</td>
+        <td>149 rs.</td>
+      </tr>
+      <tr>
+        <td>Burger</td>
+        <td>109 rs.</td>
+      </tr>
+      <tr>
+        <td>Maggi</td>
+        <td>39 rs.</td>
+      </tr>
+      <tr>
+        <td>Sandwich</td>
+        <td>35 rs.</td>
+      </tr>
+      </table>  
+
+      <div class="para-2">
+        <h2 class="subtitle">Veg</h2>
+        <table>
+        <tr>
+          <td>Dal Tadka</td>
+          <td>109 rs.</td>
+        </tr>
+        <tr>
+          <td>Kadai Paneer</td>
+          <td>109 rs.</td>
+        </tr>
+        <tr>
+          <td>Mix Veg</td>
+          <td>149 rs.</td>
+        </tr>
+        <tr>
+          <td>Kaju Curry</td>
+          <td>178 rs.</td>
+        </tr>
+        </table>  
+
+        <div class="para-3">
+          <h2 class="subtitle">Non-Veg</h2>
+          <table>
+          <tr>
+            <td>Chicken</td>
+            <td>279 rs.</td>
+          </tr>
+          <tr>
+            <td>Egg Curry</td>
+            <td>99 rs.</td>
+          </tr>
+          <tr>
+            <td>Chicken-Biryani</td>
+            <td>250 rs.</td>
+          </tr>
+          <tr>
+            <td>Fish</td>
+            <td>266 rs.</td>
+          </tr>
+          </table>  
+          <div class="para-4">
+            <h2 class="subtitle">Cold-Drinks</h2>
+            <table>
+            <tr>
+              <td>Coca-cola</td>
+              <td>27 rs.</td>
+            </tr>
+            <tr>
+              <td>Pepsi</td>
+              <td>29 rs.</td>
+            </tr>
+            <tr>
+              <td>Sprite</td>
+              <td>25 rs.</td>
+            </tr>
+            <tr>
+              <td>Limca</td>
+              <td>26 rs.</td>
+            </tr>
+            </table>  
+		</div>
+
+
+		<div class="image-grid">
+			<img src="../img/pizza.jpg">
+			<img src="../img/Smashburger-recipe-120219.webp">
+			<img src="../img/panner-masala.jpg">
+			<img src="../img/fish.jpg">
+			<img src="../img/cold-drinks.jpg">
+			<img src="../img/chicken.jpg">
+			<img src="../img/dal.jpg">
+			<img src="../img/dosa.webp">
+			<img src="../img/nonveg.jpg">
+		</div>
+	</div>
+
+
+<form action="results.html" method="GET" enctype="multipart/form-data">
+  <div><label for="name">Name</label>
+       <input type="text" name="name" id="name" placeholder="user" required>
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone" required>
+  </div>
+  <div>
+    <label for="Message">Message</label>
+    <textarea id="bio" name="bio" placeholder="Please write Feedback"></textarea>
+  </div>
+  
+  <div>
+    <label for="eyecolor">Rating</label>
+    <select name="eyecolor" id="eyecolor">
+      <option value="1-Star">1-Star</option>
+      <option label="2-Star" value="2-Star"></option>
+      <option label="3-Star" value="3-Star"></option>
+      <option label="4-Star" value="4-Star"></option>
+      <option label="5-Star" value="5-Star"></option>
+    </select>
+  </div>
+    
+
+
+  <input type="hidden" name="hidden" value="Thank-you for your Feedback">
+  
+  <button type="submit" class="submit-button">submit</button>
+
+
+</form>
+
+</body>
+</html>

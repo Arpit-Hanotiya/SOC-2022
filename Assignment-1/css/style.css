@@ -1,0 +1,74 @@
+body {
+	background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
+	font-size: 1.15em;
+	text-align: justify;
+	font-family: "Lato", sans-serif;
+}
+
+
+
+#title {
+	color: rgb(186, 133, 9);
+	font-family: "Sarabun", sans-serif;
+}
+
+.subtitle {
+	color: rgb(200, 148, 30);
+	font-family: "Sarabun", sans-serif;
+}
+
+
+
+.hotel-image {
+	height: 500px;
+	width: 50%;
+
+	border: 6px solid rgb(28, 28, 79);
+	margin: 80px 40px;
+
+	float: right;
+}
+
+.hotel-image:hover {
+  width: 400px;
+	height: 200px;
+	transition: 0.5s all;
+
+}
+
+.hotel-image:hover {
+  height: 600px;
+	width: 60%;
+
+}
+
+
+
+.site-table {
+	display: inline-block;
+}
+
+
+
+	-webkit-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+	-moz-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+	-ms-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+	-o-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+}
+
+@keyframes red-to-black {
+	0% {
+		background: red; 
+		transform: translate(0px, 0px);
+	}
+
+	50% {
+		background: yellow; 
+		transform: translate(10px, 10px);
+	}
+
+	100% {
+		background: black; 
+		transform: translate(20px, 20px);
+	}
+}
