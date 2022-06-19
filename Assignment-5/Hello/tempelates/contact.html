@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}contact{% endblock title %}
+{% block body %}
+<div class="container px-0 mb-3">
+  <img src="https://picsum.photos/1402" class="d-block w-100  my-4" alt="...">
+</div>
+
+<div class="container mb-3 py-4">
+  <h1 class="text-center">Form Submission</h1>
+  <form method="post" action="/contact">
+    {% csrf_token %}
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+    </div>
+    {% comment %} <h1>Select your Department</h1>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+        name="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Department
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">CSE</a></li>
+        <li><a class="dropdown-item" href="#">Electrical</a></li>
+        <li><a class="dropdown-item" href="#">Mechanical</a></li>
+        <li><a class="dropdown-item" href="#">Chemical</a></li>
+        <li><a class="dropdown-item" href="#">Civil</a></li>
+        <li><a class="dropdown-item" href="#">Physics</a></li>
+        <li><a class="dropdown-item" href="#">Aerospace</a></li>
+        <li><a class="dropdown-item" href="#">Metallurgy</a></li>
+
+      </ul>
+    </div>
+
+    <h1>Cult activities you are interested(You can selets multiple options)</h1>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Dance
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Music
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Dramma
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Drawing/Sketching
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Literature
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Film and Media
+      </label>
+    </div>
+
+    <h1>Veg or Non-Veg(You can selets only one option)</h1>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Veg
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Non-Veg
+      </label>
+    </div> {% endcomment %}
+
+    <div class="mb-3">
+      <label for="desc" class="form-label">Comments</label>
+      <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock body %}
